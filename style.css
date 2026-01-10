@@ -200,6 +200,46 @@ input[type="checkbox"]:checked+.toggle-switch::after {
     position: relative;
     width: 80px;
     height: 80px;
+    flex-shrink: 0;
+}
+
+.card-info-main {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.card-score-container {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.score-label {
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+.score-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.total-score {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.rank-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--accent-yellow);
+    margin-top: 4px;
 }
 
 .character-portrait {

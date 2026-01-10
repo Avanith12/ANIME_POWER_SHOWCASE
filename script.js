@@ -291,17 +291,8 @@ function setupEventListeners() {
 }
 
 function updateUI() {
-    // Update Text A
-    document.getElementById("nameA").textContent = state.selectedA.name;
-    document.getElementById("animeA").textContent = state.selectedA.anime;
-    document.getElementById("roleA").textContent = state.selectedA.role;
-    document.getElementById("descA").textContent = state.selectedA.shortDescription;
-    document.getElementById("abilityA").textContent = state.selectedA.specialAbility;
-    document.getElementById("imgA").src = state.selectedA.image;
-
-    const scoreA = calculatePowerScore(state.selectedA);
-    document.getElementById("power-score-val").textContent = scoreA;
-    document.getElementById("power-score-rank").textContent = getRankString(scoreA);
+    // Update Card A
+    updateCharacterCard(state.selectedA, "A");
 
     const battleAnnounce = document.getElementById("battle-announcement");
     const winnerText = document.getElementById("winner-text");
@@ -316,18 +307,14 @@ function updateUI() {
     cardA.classList.remove("winner-highlight");
     cardB.classList.remove("winner-highlight");
 
-    // Update Text B
+    // Update Card B
     if (state.compareMode) {
-        document.getElementById("nameB").textContent = state.selectedB.name;
-        document.getElementById("animeB").textContent = state.selectedB.anime;
-        document.getElementById("roleB").textContent = state.selectedB.role;
-        document.getElementById("descB").textContent = state.selectedB.shortDescription;
-        document.getElementById("abilityB").textContent = state.selectedB.specialAbility;
-        document.getElementById("imgB").src = state.selectedB.image;
+        updateCharacterCard(state.selectedB, "B");
         document.getElementById("table-head-A").textContent = state.selectedA.name;
         document.getElementById("table-head-B").textContent = state.selectedB.name;
 
-        const scoreB = calculatePowerScore(state.selectedB);
+        const scoreA = calculatePowerScore(state.selectedA).avg;
+        const scoreB = calculatePowerScore(state.selectedB).avg;
         battleAnnounce.style.display = "block";
 
         if (scoreA > scoreB) {
@@ -350,6 +337,20 @@ function updateUI() {
     updateCharts();
 }
 
+function updateCharacterCard(char, suffix) {
+    document.getElementById(`name${suffix}`).textContent = char.name;
+    document.getElementById(`anime${suffix}`).textContent = char.anime;
+    document.getElementById(`role${suffix}`).textContent = char.role;
+    document.getElementById(`desc${suffix}`).textContent = char.shortDescription;
+    document.getElementById(`ability${suffix}`).textContent = char.specialAbility;
+    document.getElementById(`img${suffix}`).src = char.image;
+
+    const scoreData = calculatePowerScore(char);
+    document.getElementById(`score${suffix}-avg`).textContent = scoreData.avg;
+    document.getElementById(`score${suffix}-total`).textContent = `Total: ${scoreData.sum}`;
+    document.getElementById(`rank${suffix}`).textContent = getRankString(scoreData.avg);
+}
+
 function updateComparisonTable() {
     const tbody = document.getElementById("comparison-body");
     tbody.innerHTML = "";
@@ -369,15 +370,19 @@ function updateComparisonTable() {
 
 function calculatePowerScore(char) {
     const vals = Object.values(char.stats);
-    return Math.round(vals.reduce((a, b) => a + b) / vals.length);
+    const sum = vals.reduce((a, b) => a + b, 0);
+    return {
+        sum: sum,
+        avg: Math.round(sum / vals.length)
+    };
 }
 
 function getRankString(score) {
-    if (score >= 95) return "Rank: SSS (Beyond Godly)";
-    if (score >= 90) return "Rank: SS (Godlike)";
-    if (score >= 85) return "Rank: S (Extremely Powerful)";
-    if (score >= 75) return "Rank: A (Powerful)";
-    return "Rank: B (Exceptional)";
+    if (score >= 95) return "SSS (Beyond Godly)";
+    if (score >= 90) return "SS (Godlike)";
+    if (score >= 85) return "S (Extremely Powerful)";
+    if (score >= 75) return "A (Powerful)";
+    return "B (Exceptional)";
 }
 
 // --- D3 Charts Implementation ---
