@@ -23,7 +23,7 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 - **Assets**: AI-generated character portraits
 - **Typography**: Google Fonts (Poppins)
 
-## 🛠️ How to Run Locally
+##  How to Run Locally
 
 Since this is a client-side application, you don't need to install any heavy dependencies.
 
