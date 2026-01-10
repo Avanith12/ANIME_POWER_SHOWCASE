@@ -64,7 +64,10 @@
             <div class="info-display glass-pane">
                 <div class="character-card" id="cardA">
                     <div class="character-header">
-                        <img id="imgA" src="" alt="Character A" class="character-portrait">
+                        <div class="portrait-container">
+                            <img id="imgA" src="" alt="Character A" class="character-portrait">
+                            <div class="winner-badge" id="winnerA">WINNER</div>
+                        </div>
                         <div>
                             <span class="badge" id="roleA">Hero</span>
                             <h2 id="nameA">Character Name</h2>
@@ -79,7 +82,10 @@
                 <div class="character-card" id="cardB"
                     style="display: none; border-left: 1px solid var(--border-color); padding-left: 1rem;">
                     <div class="character-header">
-                        <img id="imgB" src="" alt="Character B" class="character-portrait">
+                        <div class="portrait-container">
+                            <img id="imgB" src="" alt="Character B" class="character-portrait">
+                            <div class="winner-badge" id="winnerB">WINNER</div>
+                        </div>
                         <div>
                             <span class="badge" id="roleB">Villain</span>
                             <h2 id="nameB">Character Name</h2>
@@ -91,6 +97,11 @@
                         <strong>Special:</strong> <span id="abilityB">Ability Name</span>
                     </div>
                 </div>
+            </div>
+
+            <div id="battle-announcement" class="glass-pane"
+                style="display: none; text-align: center; margin-bottom: 2rem;">
+                <h2 id="winner-text" style="color: var(--text-primary); margin: 0;"></h2>
             </div>
 
             <div class="charts-container glass-pane">

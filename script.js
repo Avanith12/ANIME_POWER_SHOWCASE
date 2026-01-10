@@ -299,6 +299,23 @@ function updateUI() {
     document.getElementById("abilityA").textContent = state.selectedA.specialAbility;
     document.getElementById("imgA").src = state.selectedA.image;
 
+    const scoreA = calculatePowerScore(state.selectedA);
+    document.getElementById("power-score-val").textContent = scoreA;
+    document.getElementById("power-score-rank").textContent = getRankString(scoreA);
+
+    const battleAnnounce = document.getElementById("battle-announcement");
+    const winnerText = document.getElementById("winner-text");
+    const badgeA = document.getElementById("winnerA");
+    const badgeB = document.getElementById("winnerB");
+    const cardA = document.getElementById("cardA");
+    const cardB = document.getElementById("cardB");
+
+    // Reset winner states
+    badgeA.style.display = "none";
+    badgeB.style.display = "none";
+    cardA.classList.remove("winner-highlight");
+    cardB.classList.remove("winner-highlight");
+
     // Update Text B
     if (state.compareMode) {
         document.getElementById("nameB").textContent = state.selectedB.name;
@@ -309,28 +326,28 @@ function updateUI() {
         document.getElementById("imgB").src = state.selectedB.image;
         document.getElementById("table-head-A").textContent = state.selectedA.name;
         document.getElementById("table-head-B").textContent = state.selectedB.name;
+
+        const scoreB = calculatePowerScore(state.selectedB);
+        battleAnnounce.style.display = "block";
+
+        if (scoreA > scoreB) {
+            winnerText.textContent = `${state.selectedA.name} Wins!`;
+            badgeA.style.display = "block";
+            cardA.classList.add("winner-highlight");
+        } else if (scoreB > scoreA) {
+            winnerText.textContent = `${state.selectedB.name} Wins!`;
+            badgeB.style.display = "block";
+            cardB.classList.add("winner-highlight");
+        } else {
+            winnerText.textContent = "It's a Draw!";
+        }
+
         updateComparisonTable();
+    } else {
+        battleAnnounce.style.display = "none";
     }
 
-    // Power Score
-    const score = calculatePowerScore(state.selectedA);
-    document.getElementById("power-score-val").textContent = score;
-    document.getElementById("power-score-rank").textContent = getRankString(score);
-
     updateCharts();
-}
-
-function calculatePowerScore(char) {
-    const vals = Object.values(char.stats);
-    return Math.round(vals.reduce((a, b) => a + b) / vals.length);
-}
-
-function getRankString(score) {
-    if (score >= 95) return "Rank: SSS (Beyond Godly)";
-    if (score >= 90) return "Rank: SS (Godlike)";
-    if (score >= 85) return "Rank: S (Extremely Powerful)";
-    if (score >= 75) return "Rank: A (Powerful)";
-    return "Rank: B (Exceptional)";
 }
 
 function updateComparisonTable() {
@@ -348,6 +365,19 @@ function updateComparisonTable() {
         `;
         tbody.appendChild(row);
     });
+}
+
+function calculatePowerScore(char) {
+    const vals = Object.values(char.stats);
+    return Math.round(vals.reduce((a, b) => a + b) / vals.length);
+}
+
+function getRankString(score) {
+    if (score >= 95) return "Rank: SSS (Beyond Godly)";
+    if (score >= 90) return "Rank: SS (Godlike)";
+    if (score >= 85) return "Rank: S (Extremely Powerful)";
+    if (score >= 75) return "Rank: A (Powerful)";
+    return "Rank: B (Exceptional)";
 }
 
 // --- D3 Charts Implementation ---
