@@ -15,7 +15,7 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 - **Completely Responsive**: Designed to look great on both desktop and mobile devices.
 
 ---
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Core**: HTML5, CSS3, JavaScript (Vanilla - no frameworks)
 - **Visualization**: [D3.js v7](https://d3js.org/) (via CDN)
