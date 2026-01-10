@@ -5,7 +5,7 @@
 Explore the stats that define your favorite heroes and villains through dynamic radar and bar charts.
 
 ---
-## 🚀 Features
+##  Features
 
 - **Dynamic Data Visualization**: Utilize an interactive **Radar Chart** (Spider Plot) and **Bar Chart** to visualize character attributes.
 - **Compare Mode**: Overlay Two characters on the same chart for a direct head-to-head power analysis.
