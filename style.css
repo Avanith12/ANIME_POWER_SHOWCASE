@@ -190,10 +190,11 @@ input[type="checkbox"]:checked+.toggle-switch::after {
 
 .character-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
     position: relative;
+    flex-wrap: nowrap;
 }
 
 .portrait-container {
