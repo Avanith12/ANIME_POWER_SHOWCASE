@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --accent-cyan: #777777;
+    --accent-magenta: #999999;
+    --accent-yellow: #bbbbbb;
+    --text-primary: #ffffff;
+    --text-secondary: #dddddd;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2rem;
+}
+
+header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+}
+
+/* Glassmorphism Card */
+.glass-pane {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Control Panel */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+select {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition-speed);
+}
+
+select:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    background: transparent;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-speed);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+button:hover {
+    background: var(--accent-cyan);
+    color: var(--text-primary);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+button.secondary {
+    border-color: var(--accent-magenta);
+    color: var(--accent-magenta);
+}
+
+button.secondary:hover {
+    background: var(--accent-magenta);
+    color: var(--text-primary);
+    box-shadow: 0 0 10px var(--accent-magenta);
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background: var(--border-color);
+    border-radius: 15px;
+    position: relative;
+    transition: var(--transition-speed);
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: var(--transition-speed);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.toggle-switch {
+    background: var(--accent-cyan);
+}
+
+input[type="checkbox"]:checked+.toggle-switch::after {
+    left: 28px;
+}
+
+/* Visualization Panel */
+.viz-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.character-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.character-portrait {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+    background: #000;
+}
+
+#imgB {
+    border-color: var(--accent-magenta);
+    box-shadow: 0 0 10px var(--accent-magenta);
+}
+
+.character-card h2 {
+    font-size: 1.8rem;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.character-card .anime-name {
+    color: var(--accent-magenta);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.character-card p {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 0.5rem;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* D3 Elements */
+.radar-chart-container,
+.bar-chart-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.winner {
+    color: var(--accent-yellow);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--accent-yellow);
+}
+
+/* Tooltip */
+#tooltip {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 100;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .app-container {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-container {
+        grid-template-columns: 1fr;
+    }
+}
