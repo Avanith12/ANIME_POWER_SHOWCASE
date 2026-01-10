@@ -39,3 +39,14 @@ Since this is a client-side application, you don't need to install any heavy dep
    Simply open `index.html` in your favorite web browser (Chrome, Firefox, Safari, Edge).
 
 ---
+
+## 📜 Credits & Disclaimer
+
+- **Charts**: Powered by [D3.js](https://d3js.org/).
+- **Stats**: Character power stats are estimates based on various anime community power-scaling discussions and are purely for visualization purposes.
+- **Portraits**: Portraits were generated using AI to fit the project's unique aesthetic.
+- **Anime**: All characters and series names are property of their respective creators and animation studios.
+
+---
+
+Made with ❤️ for Anime Fans!
