@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ANIME POWER SHOWCASE
+  Goal: Visualize and compare anime character power stats using D3.js.
+  
+  HOW TO RUN:
+  1. Ensure index.html, style.css, and script.js are in the same directory.
+  2. Open index.html in any modern web browser.
+  3. Character data is stored locally in script.js.
+  4. Compare mode allows overlaying two characters on the radar chart.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Power Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- D3.js v7 CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Anime Power Showcase</h1>
+        </header>
+
+        <!-- Left Control Panel -->
+        <aside class="controls glass-pane">
+            <div class="control-group">
+                <label for="charA-select">Character A</label>
+                <select id="charA-select"></select>
+            </div>
+
+            <div class="control-group" id="charB-group" style="display: none;">
+                <label for="charB-select">Character B</label>
+                <select id="charB-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label class="toggle-container">
+                    <input type="checkbox" id="compare-toggle">
+                    <span class="toggle-switch"></span>
+                    <span>Compare Mode</span>
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button id="random-btn">Random</button>
+                <button id="reset-btn" class="secondary">Reset</button>
+            </div>
+
+            <div class="power-score-card" style="margin-top: 2rem;">
+                <label>Power Score</label>
+                <div id="power-score-val" style="font-size: 2.5rem; font-weight: 800; color: var(--accent-yellow);">0
+                </div>
+                <p id="power-score-rank" style="font-size: 0.9rem; color: var(--text-secondary);"></p>
+            </div>
+        </aside>
+
+        <!-- Right Visualization Panel -->
+        <main class="viz-panel">
+            <div class="info-display glass-pane">
+                <div class="character-card" id="cardA">
+                    <div class="character-header">
+                        <img id="imgA" src="" alt="Character A" class="character-portrait">
+                        <div>
+                            <span class="badge" id="roleA">Hero</span>
+                            <h2 id="nameA">Character Name</h2>
+                            <div class="anime-name" id="animeA">Anime Series</div>
+                        </div>
+                    </div>
+                    <p id="descA">Short description goes here...</p>
+                    <div style="font-size: 0.85rem;">
+                        <strong>Special:</strong> <span id="abilityA">Ability Name</span>
+                    </div>
+                </div>
+                <div class="character-card" id="cardB"
+                    style="display: none; border-left: 1px solid var(--border-color); padding-left: 1rem;">
+                    <div class="character-header">
+                        <img id="imgB" src="" alt="Character B" class="character-portrait">
+                        <div>
+                            <span class="badge" id="roleB">Villain</span>
+                            <h2 id="nameB">Character Name</h2>
+                            <div class="anime-name" id="animeB">Anime Series</div>
+                        </div>
+                    </div>
+                    <p id="descB">Short description goes here...</p>
+                    <div style="font-size: 0.85rem;">
+                        <strong>Special:</strong> <span id="abilityB">Ability Name</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-container glass-pane">
+                <div class="radar-chart-container" id="radar-chart"></div>
+                <div class="bar-chart-container" id="bar-chart"></div>
+            </div>
+
+            <div id="comparison-section" class="glass-pane" style="display: none;">
+                <h3>Comparison Details</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Stat</th>
+                            <th id="table-head-A">Char A</th>
+                            <th id="table-head-B">Char B</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
