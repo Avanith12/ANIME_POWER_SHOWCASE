@@ -40,7 +40,7 @@ Since this is a client-side application, you don't need to install any heavy dep
 
 ---
 
-## 📜 Credits & Disclaimer
+##  Credits & Disclaimer
 
 - **Charts**: Powered by [D3.js](https://d3js.org/).
 - **Stats**: Character power stats are estimates based on various anime community power-scaling discussions and are purely for visualization purposes.
