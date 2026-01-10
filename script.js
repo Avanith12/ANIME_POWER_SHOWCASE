@@ -137,6 +137,74 @@ const characters = [
         image: "https://via.placeholder.com/300x300/0b0e14/ff00c8?text=Levi+Ackerman",
         specialAbility: "Humanity's Strongest Soldier",
         shortDescription: "Expert Titan killer with unparalleled combat skill."
+    },
+    {
+        id: "sukuna",
+        name: "Ryomen Sukuna",
+        anime: "Jujutsu Kaisen",
+        role: "Villain",
+        stats: {
+            Strength: 95,
+            Speed: 95,
+            IQ: 98,
+            Durability: 95,
+            Energy: 100,
+            Combat: 100
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ff0000?text=Sukuna",
+        specialAbility: "Malevolent Shrine / Cleave",
+        shortDescription: "The King of Curses, an embodiment of pure malice and power."
+    },
+    {
+        id: "saitama",
+        name: "Saitama",
+        anime: "One Punch Man",
+        role: "Hero",
+        stats: {
+            Strength: 100,
+            Speed: 100,
+            IQ: 50,
+            Durability: 100,
+            Energy: 100,
+            Combat: 80
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ffff00?text=Saitama",
+        specialAbility: "Serious Punch",
+        shortDescription: "A hero who can defeat any enemy with a single punch."
+    },
+    {
+        id: "ichigo",
+        name: "Ichigo Kurosaki",
+        anime: "Bleach",
+        role: "Hero",
+        stats: {
+            Strength: 92,
+            Speed: 98,
+            IQ: 80,
+            Durability: 90,
+            Energy: 100,
+            Combat: 95
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ffa500?text=Ichigo",
+        specialAbility: "True Bankai / Getsuga Tensho",
+        shortDescription: "A Substitute Soul Reaper with extraordinary spiritual pressure."
+    },
+    {
+        id: "madara",
+        name: "Madara Uchiha",
+        anime: "Naruto",
+        role: "Villain",
+        stats: {
+            Strength: 94,
+            Speed: 92,
+            IQ: 98,
+            Durability: 92,
+            Energy: 100,
+            Combat: 100
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/800080?text=Madara",
+        specialAbility: "Infinite Tsukuyomi",
+        shortDescription: "The legendary leader of the Uchiha clan."
     }
 ];
 
