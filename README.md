@@ -15,3 +15,27 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 - **Completely Responsive**: Designed to look great on both desktop and mobile devices.
 
 ---
+## 🛠️ Tech Stack
+
+- **Core**: HTML5, CSS3, JavaScript (Vanilla - no frameworks)
+- **Visualization**: [D3.js v7](https://d3js.org/) (via CDN)
+- **Styling**: Vanilla CSS with Grid/Flexbox
+- **Assets**: AI-generated character portraits
+- **Typography**: Google Fonts (Poppins)
+
+## 🛠️ How to Run Locally
+
+Since this is a client-side application, you don't need to install any heavy dependencies.
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Avanith12/ANIME_POWER_SHOWCASE.git
+   ```
+2. **Navigate to the folder**:
+   ```bash
+   cd ANIME_POWER_SHOWCASE
+   ```
+3. **Open the app**:
+   Simply open `index.html` in your favorite web browser (Chrome, Firefox, Safari, Edge).
+
+---
