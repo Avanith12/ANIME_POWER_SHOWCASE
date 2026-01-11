@@ -1,21 +1,8 @@
 #  Anime Power Showcase
 
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg?style=for-the-badge&logo=javascript)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
-
-[![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)](https://github.com/Avanith12/ANIME_POWER_SHOWCASE)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![Anime](https://img.shields.io/badge/Anime-Power%20Scaling-red?style=for-the-badge)](https://github.com/Avanith12/ANIME_POWER_SHOWCASE)
-
 **Anime Power Showcase** is a sleek, interactive data visualization dashboard designed to compare the power levels of legendary anime characters. Built with **D3.js**, it features a sophisticated, monochrome "Dark Mode" aesthetic with smooth transitions and AI-generated portraits.
 
 Explore the stats that define your favorite heroes and villains through dynamic radar and bar charts.
-
-</div>
 
 ##  Featured Characters
 
