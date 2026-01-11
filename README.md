@@ -90,6 +90,32 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 - **Assets**: AI-generated character portraits
 - **Typography**: Google Fonts (Poppins)
 
+##  Project Structure
+
+```
+ANIME_POWER_SHOWCASE/
+│
+├── index.html          # Main HTML file
+├── style.css           # Stylesheet with dark theme and glassmorphism effects
+├── script.js           # JavaScript logic, character data, and D3.js charts
+├── README.md           # Project documentation
+│
+└── images/             # Character portraits
+    ├── naruto.png
+    ├── sasuke.png
+    ├── goku.png
+    ├── vegeta.png
+    ├── luffy.png
+    ├── zoro.png
+    ├── gojo.jpeg
+    ├── Levi Ackerman.jpeg
+    ├── Ryomen Sukuna.jpeg
+    ├── Saitama.png
+    ├── Ichigo Kurosaki.jpeg
+    ├── Madara Uchiha.jpeg
+    └── readme.png      # README preview image
+```
+
 ##  How to Run Locally
 
 Since this is a client-side application, you don't need to install any heavy dependencies.
