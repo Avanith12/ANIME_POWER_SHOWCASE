@@ -260,9 +260,19 @@ function setupEventListeners() {
 
     document.getElementById("compare-toggle").addEventListener("change", (e) => {
         state.compareMode = e.target.checked;
-        document.getElementById("charB-group").style.display = state.compareMode ? "flex" : "none";
-        document.getElementById("cardB").style.display = state.compareMode ? "block" : "none";
-        document.getElementById("comparison-section").style.display = state.compareMode ? "block" : "none";
+        const charBGroup = document.getElementById("charB-group");
+        const infoDisplay = document.getElementById("character-cards-container");
+        const comparisonSection = document.getElementById("comparison-section");
+        
+        charBGroup.style.display = state.compareMode ? "flex" : "none";
+        
+        if (state.compareMode) {
+            infoDisplay.classList.add("compare-mode");
+            comparisonSection.classList.add("active");
+        } else {
+            infoDisplay.classList.remove("compare-mode");
+            comparisonSection.classList.remove("active");
+        }
         updateUI();
     });
 
@@ -284,8 +294,8 @@ function setupEventListeners() {
         document.getElementById("charB-select").value = state.selectedB.id;
         document.getElementById("compare-toggle").checked = false;
         document.getElementById("charB-group").style.display = "none";
-        document.getElementById("cardB").style.display = "none";
-        document.getElementById("comparison-section").style.display = "none";
+        document.getElementById("character-cards-container").classList.remove("compare-mode");
+        document.getElementById("comparison-section").classList.remove("active");
         updateUI();
     });
 }
@@ -315,7 +325,7 @@ function updateUI() {
 
         const scoreA = calculatePowerScore(state.selectedA).avg;
         const scoreB = calculatePowerScore(state.selectedB).avg;
-        battleAnnounce.style.display = "block";
+        battleAnnounce.classList.add("active");
 
         if (scoreA > scoreB) {
             winnerText.textContent = `${state.selectedA.name} Wins!`;
@@ -331,7 +341,7 @@ function updateUI() {
 
         updateComparisonTable();
     } else {
-        battleAnnounce.style.display = "none";
+        battleAnnounce.classList.remove("active");
     }
 
     updateCharts();
