@@ -117,7 +117,7 @@ const characters = [
             Energy: 100,
             Combat: 98
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/00f2ff?text=Gojo+Satoru",
+        image: "images/gojo.jpeg",
         specialAbility: "Limitless / Hollow Purple",
         shortDescription: "The strongest Jujutsu Sorcerer."
     },
@@ -134,7 +134,7 @@ const characters = [
             Energy: 50,
             Combat: 100
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ff00c8?text=Levi+Ackerman",
+        image: "images/Levi Ackerman.jpeg",
         specialAbility: "Humanity's Strongest Soldier",
         shortDescription: "Expert Titan killer with unparalleled combat skill."
     },
@@ -151,7 +151,7 @@ const characters = [
             Energy: 100,
             Combat: 100
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ff0000?text=Sukuna",
+        image: "images/Ryomen Sukuna.jpeg",
         specialAbility: "Malevolent Shrine / Cleave",
         shortDescription: "The King of Curses, an embodiment of pure malice and power."
     },
@@ -168,7 +168,7 @@ const characters = [
             Energy: 100,
             Combat: 80
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ffff00?text=Saitama",
+        image: "images/Saitama.png",
         specialAbility: "Serious Punch",
         shortDescription: "A hero who can defeat any enemy with a single punch."
     },
@@ -185,7 +185,7 @@ const characters = [
             Energy: 100,
             Combat: 95
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ffa500?text=Ichigo",
+        image: "images/Ichigo Kurosaki.jpeg",
         specialAbility: "True Bankai / Getsuga Tensho",
         shortDescription: "A Substitute Soul Reaper with extraordinary spiritual pressure."
     },
@@ -202,7 +202,7 @@ const characters = [
             Energy: 100,
             Combat: 100
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/800080?text=Madara",
+        image: "images/Madara Uchiha.jpeg",
         specialAbility: "Infinite Tsukuyomi",
         shortDescription: "The legendary leader of the Uchiha clan."
     }
