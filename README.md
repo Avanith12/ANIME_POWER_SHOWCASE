@@ -99,6 +99,7 @@ ANIME_POWER_SHOWCASE/
 ├── style.css           # Stylesheet with dark theme and glassmorphism effects
 ├── script.js           # JavaScript logic, character data, and D3.js charts
 ├── README.md           # Project documentation
+├── LICENSE             # MIT License
 │
 └── images/             # Character portraits
     ├── naruto.png
@@ -130,6 +131,12 @@ Since this is a client-side application, you don't need to install any heavy dep
    ```
 3. **Open the app**:
    Simply open `index.html` in your favorite web browser (Chrome, Firefox, Safari, Edge).
+
+---
+
+##  License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
