@@ -20,12 +20,12 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/goku.png" alt="Goku" width="120"><br>
       <b>Goku</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="images/vegeta.png" alt="Vegeta" width="120"><br>
       <b>Vegeta</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="images/luffy.png" alt="Monkey D. Luffy" width="120"><br>
       <b>Monkey D. Luffy</b>
@@ -34,10 +34,36 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/zoro.png" alt="Roronoa Zoro" width="120"><br>
       <b>Roronoa Zoro</b>
     </td>
+    <td align="center">
+      <img src="images/gojo.jpeg" alt="Gojo Satoru" width="120"><br>
+      <b>Gojo Satoru</b>
+    </td>
+    <td align="center">
+      <img src="images/Levi Ackerman.jpeg" alt="Levi Ackerman" width="120"><br>
+      <b>Levi Ackerman</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/Ryomen Sukuna.jpeg" alt="Ryomen Sukuna" width="120"><br>
+      <b>Ryomen Sukuna</b>
+    </td>
+    <td align="center">
+      <img src="images/Saitama.png" alt="Saitama" width="120"><br>
+      <b>Saitama</b>
+    </td>
+    <td align="center">
+      <img src="images/Ichigo Kurosaki.jpeg" alt="Ichigo Kurosaki" width="120"><br>
+      <b>Ichigo Kurosaki</b>
+    </td>
+    <td align="center">
+      <img src="images/Madara Uchiha.jpeg" alt="Madara Uchiha" width="120"><br>
+      <b>Madara Uchiha</b>
+    </td>
   </tr>
 </table>
 
-*And many more powerful characters to compare!*
+*All 13 legendary characters ready for power comparison!*
 
 ---
 ##  Features
