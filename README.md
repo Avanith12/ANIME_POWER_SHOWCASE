@@ -4,6 +4,41 @@
 
 Explore the stats that define your favorite heroes and villains through dynamic radar and bar charts.
 
+##  Featured Characters
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/naruto.png" alt="Naruto Uzumaki" width="120"><br>
+      <b>Naruto Uzumaki</b>
+    </td>
+    <td align="center">
+      <img src="images/sasuke.png" alt="Sasuke Uchiha" width="120"><br>
+      <b>Sasuke Uchiha</b>
+    </td>
+    <td align="center">
+      <img src="images/goku.png" alt="Goku" width="120"><br>
+      <b>Goku</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/vegeta.png" alt="Vegeta" width="120"><br>
+      <b>Vegeta</b>
+    </td>
+    <td align="center">
+      <img src="images/luffy.png" alt="Monkey D. Luffy" width="120"><br>
+      <b>Monkey D. Luffy</b>
+    </td>
+    <td align="center">
+      <img src="images/zoro.png" alt="Roronoa Zoro" width="120"><br>
+      <b>Roronoa Zoro</b>
+    </td>
+  </tr>
+</table>
+
+*And many more powerful characters to compare!*
+
 ---
 ##  Features
 
