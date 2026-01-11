@@ -85,3 +85,4 @@ Since this is a client-side application, you don't need to install any heavy dep
 ---
 
 Made with ❤️ for Anime Fans!
+
