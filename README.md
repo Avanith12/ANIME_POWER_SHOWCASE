@@ -3,6 +3,10 @@
 **Live Demo:** [https://avanith12.github.io/ANIME_POWER_SHOWCASE/](https://avanith12.github.io/ANIME_POWER_SHOWCASE/)
 
 <div align="center">
+  <img src="gifs/power-dragon-ball.gif" alt="Anime Power" width="400">
+</div>
+
+<div align="center">
   <img src="images/readme.png" alt="Anime Power Showcase" width="800">
 </div>
 
@@ -100,6 +104,9 @@ ANIME_POWER_SHOWCASE/
 ├── script.js           # JavaScript logic, character data, and D3.js charts
 ├── README.md           # Project documentation
 ├── LICENSE             # MIT License
+│
+├── gifs/               # Animated GIFs
+│   └── power-dragon-ball.gif
 │
 └── images/             # Character portraits
     ├── naruto.png
