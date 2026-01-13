@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ANIME POWER SHOWCASE
+  Goal: Visualize and compare anime character power stats using D3.js.
+  
+  HOW TO RUN:
+  1. Ensure index.html, style.css, and script.js are in the same directory.
+  2. Open index.html in any modern web browser.
+  3. Character data is stored locally in script.js.
+  4. Compare mode allows overlaying two characters on the radar chart.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Power Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- D3.js v7 CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Anime Power Showcase</h1>
+            <a href="index.html" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; margin-top: 1rem; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">← Back to Home</a>
+        </header>
+
+        <!-- Left Control Panel -->
+        <aside class="controls glass-pane">
+            <div class="control-group">
+                <label for="charA-select">Character A</label>
+                <select id="charA-select"></select>
+            </div>
+
+            <div class="control-group" id="charB-group" style="display: none;">
+                <label for="charB-select">Character B</label>
+                <select id="charB-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label class="toggle-container">
+                    <input type="checkbox" id="compare-toggle">
+                    <span class="toggle-switch"></span>
+                    <span>Compare Mode</span>
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button id="random-btn">Random</button>
+                <button id="reset-btn" class="secondary">Reset</button>
+            </div>
+        </aside>
+
+        <!-- Right Visualization Panel -->
+        <main class="viz-panel">
+            <div class="info-display glass-pane" id="character-cards-container">
+                <div class="character-card" id="cardA">
+                    <div class="character-header">
+                        <div class="portrait-container">
+                            <img id="imgA" src="" alt="Character A" class="character-portrait">
+                            <div class="winner-badge" id="winnerA">WINNER</div>
+                        </div>
+                        <div class="card-info-main">
+                            <span class="badge" id="roleA">Hero</span>
+                            <h2 id="nameA">Character Name</h2>
+                            <div class="anime-name" id="animeA">Anime Series</div>
+                        </div>
+                        <div class="card-score-container">
+                            <div class="score-label">POWER</div>
+                            <div class="score-value" id="scoreA-avg">0</div>
+                            <div class="total-score" id="scoreA-total">Total: 0</div>
+                            <div class="rank-label" id="rankA">Rank: -</div>
+                        </div>
+                    </div>
+                    <div class="character-details">
+                        <p id="descA">Short description goes here...</p>
+                        <div class="special-ability">
+                            <strong>Special:</strong> <span id="abilityA">Ability Name</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-card" id="cardB">
+                    <div class="character-header">
+                        <div class="portrait-container">
+                            <img id="imgB" src="" alt="Character B" class="character-portrait">
+                            <div class="winner-badge" id="winnerB">WINNER</div>
+                        </div>
+                        <div class="card-info-main">
+                            <span class="badge" id="roleB">Villain</span>
+                            <h2 id="nameB">Character Name</h2>
+                            <div class="anime-name" id="animeB">Anime Series</div>
+                        </div>
+                        <div class="card-score-container">
+                            <div class="score-label">POWER</div>
+                            <div class="score-value" id="scoreB-avg">0</div>
+                            <div class="total-score" id="scoreB-total">Total: 0</div>
+                            <div class="rank-label" id="rankB">Rank: -</div>
+                        </div>
+                    </div>
+                    <div class="character-details">
+                        <p id="descB">Short description goes here...</p>
+                        <div class="special-ability">
+                            <strong>Special:</strong> <span id="abilityB">Ability Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="battle-announcement" class="glass-pane battle-announcement">
+                <h2 id="winner-text"></h2>
+            </div>
+
+            <div class="charts-container glass-pane">
+                <div class="radar-chart-container" id="radar-chart"></div>
+                <div class="bar-chart-container" id="bar-chart"></div>
+            </div>
+
+            <div id="comparison-section" class="glass-pane comparison-section">
+                <h3>Comparison Details</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Stat</th>
+                            <th id="table-head-A">Char A</th>
+                            <th id="table-head-B">Char B</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

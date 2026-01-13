@@ -1,142 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-  ANIME POWER SHOWCASE
-  Goal: Visualize and compare anime character power stats using D3.js.
-  
-  HOW TO RUN:
-  1. Ensure index.html, style.css, and script.js are in the same directory.
-  2. Open index.html in any modern web browser.
-  3. Character data is stored locally in script.js.
-  4. Compare mode allows overlaying two characters on the radar chart.
--->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Power Showcase</title>
     <link rel="stylesheet" href="style.css">
-    <!-- D3.js v7 CDN -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .homepage {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .enter-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: transparent;
+            border: 2px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .enter-btn:hover {
+            background: var(--accent-cyan);
+            color: var(--text-primary);
+        }
+
+        .about {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-cyan);
+        }
+
+        .about p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .characters {
+            margin-top: 4rem;
+        }
+
+        .characters h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .char-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .char-item:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-3px);
+        }
+
+        .char-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .char-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .char-item .anime {
+            color: var(--accent-magenta);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .char-item .role {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .char-item p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .char-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="app-container">
-        <header>
+    <div class="homepage">
+        <div class="hero">
             <h1>Anime Power Showcase</h1>
-        </header>
+            <p>Compare power levels of your favorite anime characters. See their stats, abilities, and find out who's
+                the strongest.</p>
+            <a href="app.html" class="enter-btn">Start Comparing</a>
+        </div>
 
-        <!-- Left Control Panel -->
-        <aside class="controls glass-pane">
-            <div class="control-group">
-                <label for="charA-select">Character A</label>
-                <select id="charA-select"></select>
-            </div>
+        <div class="about">
+            <h2>About</h2>
+            <p>This is an interactive dashboard where you can compare anime characters from different series. Each
+                character has stats for Strength, Speed, IQ, Durability, Energy, and Combat skills.</p>
+            <p>Use the radar charts and bar graphs to visualize how characters stack up against each other. Turn on
+                Compare Mode to see two characters side-by-side and find out who would win in a battle.</p>
+        </div>
 
-            <div class="control-group" id="charB-group" style="display: none;">
-                <label for="charB-select">Character B</label>
-                <select id="charB-select"></select>
-            </div>
-
-            <div class="control-group">
-                <label class="toggle-container">
-                    <input type="checkbox" id="compare-toggle">
-                    <span class="toggle-switch"></span>
-                    <span>Compare Mode</span>
-                </label>
-            </div>
-
-            <div class="button-group">
-                <button id="random-btn">Random</button>
-                <button id="reset-btn" class="secondary">Reset</button>
-            </div>
-        </aside>
-
-        <!-- Right Visualization Panel -->
-        <main class="viz-panel">
-            <div class="info-display glass-pane" id="character-cards-container">
-                <div class="character-card" id="cardA">
-                    <div class="character-header">
-                        <div class="portrait-container">
-                            <img id="imgA" src="" alt="Character A" class="character-portrait">
-                            <div class="winner-badge" id="winnerA">WINNER</div>
-                        </div>
-                        <div class="card-info-main">
-                            <span class="badge" id="roleA">Hero</span>
-                            <h2 id="nameA">Character Name</h2>
-                            <div class="anime-name" id="animeA">Anime Series</div>
-                        </div>
-                        <div class="card-score-container">
-                            <div class="score-label">POWER</div>
-                            <div class="score-value" id="scoreA-avg">0</div>
-                            <div class="total-score" id="scoreA-total">Total: 0</div>
-                            <div class="rank-label" id="rankA">Rank: -</div>
-                        </div>
-                    </div>
-                    <div class="character-details">
-                        <p id="descA">Short description goes here...</p>
-                        <div class="special-ability">
-                            <strong>Special:</strong> <span id="abilityA">Ability Name</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="character-card" id="cardB">
-                    <div class="character-header">
-                        <div class="portrait-container">
-                            <img id="imgB" src="" alt="Character B" class="character-portrait">
-                            <div class="winner-badge" id="winnerB">WINNER</div>
-                        </div>
-                        <div class="card-info-main">
-                            <span class="badge" id="roleB">Villain</span>
-                            <h2 id="nameB">Character Name</h2>
-                            <div class="anime-name" id="animeB">Anime Series</div>
-                        </div>
-                        <div class="card-score-container">
-                            <div class="score-label">POWER</div>
-                            <div class="score-value" id="scoreB-avg">0</div>
-                            <div class="total-score" id="scoreB-total">Total: 0</div>
-                            <div class="rank-label" id="rankB">Rank: -</div>
-                        </div>
-                    </div>
-                    <div class="character-details">
-                        <p id="descB">Short description goes here...</p>
-                        <div class="special-ability">
-                            <strong>Special:</strong> <span id="abilityB">Ability Name</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="battle-announcement" class="glass-pane battle-announcement">
-                <h2 id="winner-text"></h2>
-            </div>
-
-            <div class="charts-container glass-pane">
-                <div class="radar-chart-container" id="radar-chart"></div>
-                <div class="bar-chart-container" id="bar-chart"></div>
-            </div>
-
-            <div id="comparison-section" class="glass-pane comparison-section">
-                <h3>Comparison Details</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Stat</th>
-                            <th id="table-head-A">Char A</th>
-                            <th id="table-head-B">Char B</th>
-                        </tr>
-                    </thead>
-                    <tbody id="comparison-body">
-                        <!-- Populated by JS -->
-                    </tbody>
-                </table>
-            </div>
-        </main>
+        <div class="characters">
+            <h2>Characters</h2>
+            <div class="char-grid" id="char-grid"></div>
+        </div>
     </div>
 
-    <div id="tooltip"></div>
+    <script>
+        const characters = [
+            { name: "Naruto Uzumaki", anime: "Naruto", role: "Hero", image: "images/naruto.png", desc: "The Seventh Hokage and hero of the Leaf Village." },
+            { name: "Sasuke Uchiha", anime: "Naruto", role: "Anti-Hero", image: "images/sasuke.png", desc: "The Shadow Shinobi protecting the village." },
+            { name: "Goku", anime: "Dragon Ball", role: "Hero", image: "images/goku.png", desc: "A Saiyan warrior breaking his own limits." },
+            { name: "Vegeta", anime: "Dragon Ball", role: "Anti-Hero", image: "images/vegeta.png", desc: "The proud Prince of all Saiyans." },
+            { name: "Monkey D. Luffy", anime: "One Piece", role: "Hero", image: "images/luffy.png", desc: "Captain of the Straw Hat Pirates." },
+            { name: "Roronoa Zoro", anime: "One Piece", role: "Hero", image: "images/zoro.png", desc: "Master swordsman aiming to be the strongest." },
+            { name: "Gojo Satoru", anime: "Jujutsu Kaisen", role: "Hero", image: "images/gojo.jpeg", desc: "The strongest Jujutsu Sorcerer." },
+            { name: "Levi Ackerman", anime: "Attack on Titan", role: "Hero", image: "images/Levi Ackerman.jpeg", desc: "Humanity's strongest soldier." },
+            { name: "Ryomen Sukuna", anime: "Jujutsu Kaisen", role: "Villain", image: "images/Ryomen Sukuna.jpeg", desc: "The King of Curses." },
+            { name: "Saitama", anime: "One Punch Man", role: "Hero", image: "images/Saitama.png", desc: "A hero who defeats enemies with one punch." },
+            { name: "Ichigo Kurosaki", anime: "Bleach", role: "Hero", image: "images/Ichigo Kurosaki.jpeg", desc: "A Substitute Soul Reaper." },
+            { name: "Madara Uchiha", anime: "Naruto", role: "Villain", image: "images/Madara Uchiha.jpeg", desc: "The legendary leader of the Uchiha clan." }
+        ];
 
-    <script src="script.js"></script>
+        const grid = document.getElementById("char-grid");
+        characters.forEach(char => {
+            const div = document.createElement("div");
+            div.className = "char-item";
+            div.innerHTML = `
+                <img src="${char.image}" alt="${char.name}">
+                <h3>${char.name}</h3>
+                <div class="anime">${char.anime}</div>
+                <span class="role">${char.role}</span>
+                <p>${char.desc}</p>
+            `;
+            grid.appendChild(div);
+        });
+    </script>
 </body>
 
 </html>
