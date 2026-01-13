@@ -84,6 +84,7 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 - **Intelligent Power Scoring**: Automatically calculates a "Power Score" and assigns a rank (e.g., Godlike, S-Rank) based on combined stats.
 - **Premium Monochrome UI**: A clean, modern "Dark Mode" interface with glassmorphism effects and smooth D3.js animations.
 - **Completely Responsive**: Designed to look great on both desktop and mobile devices.
+- **Homepage**: Beautiful landing page with character showcase and website description.
 
 ---
 ##  Tech Stack
@@ -99,14 +100,17 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 ```
 ANIME_POWER_SHOWCASE/
 │
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet with dark theme and glassmorphism effects
+├── index.html          # Homepage/landing page
+├── app.html            # Main application page
+├── style.css           # Shared stylesheet with dark theme and glassmorphism effects
+├── home.css            # Homepage-specific styles
 ├── script.js           # JavaScript logic, character data, and D3.js charts
 ├── README.md           # Project documentation
 ├── LICENSE             # MIT License
 │
 ├── gifs/               # Animated GIFs
-│   └── power-dragon-ball.gif
+│   ├── power-dragon-ball.gif
+│   └── aesthetic.gif
 │
 └── images/             # Character portraits
     ├── naruto.png
