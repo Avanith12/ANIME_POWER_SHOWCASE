@@ -205,6 +205,91 @@ const characters = [
         image: "images/Madara Uchiha.jpeg",
         specialAbility: "Infinite Tsukuyomi",
         shortDescription: "The legendary leader of the Uchiha clan."
+    },
+    {
+        id: "hashirama",
+        name: "Hashirama Senju",
+        anime: "Naruto",
+        role: "Hero",
+        stats: {
+            Strength: 95,
+            Speed: 90,
+            IQ: 92,
+            Durability: 98,
+            Energy: 100,
+            Combat: 95
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/00ff00?text=Hashirama",
+        specialAbility: "Wood Style: Deep Forest Emergence",
+        shortDescription: "The First Hokage and God of Shinobi."
+    },
+    {
+        id: "toji",
+        name: "Toji Fushiguro",
+        anime: "Jujutsu Kaisen",
+        role: "Villain",
+        stats: {
+            Strength: 98,
+            Speed: 99,
+            IQ: 95,
+            Durability: 90,
+            Energy: 0,
+            Combat: 100
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/555555?text=Toji",
+        specialAbility: "Heavenly Restriction",
+        shortDescription: " The Sorcerer Killer with zero cursed energy."
+    },
+    {
+        id: "sanji",
+        name: "Sanji",
+        anime: "One Piece",
+        role: "Hero",
+        stats: {
+            Strength: 92,
+            Speed: 96,
+            IQ: 90,
+            Durability: 88,
+            Energy: 85,
+            Combat: 94
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ffff00?text=Sanji",
+        specialAbility: "Ifrit Jambe",
+        shortDescription: "cook of the Straw Hat Pirates."
+    },
+    {
+        id: "roger",
+        name: "Gol D. Roger",
+        anime: "One Piece",
+        role: "Hero",
+        stats: {
+            Strength: 100,
+            Speed: 100,
+            IQ: 95,
+            Durability: 100,
+            Energy: 100,
+            Combat: 100
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ff0000?text=Roger",
+        specialAbility: "Divine Departure",
+        shortDescription: "The Pirate King who conquered the Grand Line."
+    },
+    {
+        id: "whitebeard",
+        name: "Edward Newgate",
+        anime: "One Piece",
+        role: "Hero",
+        stats: {
+            Strength: 100,
+            Speed: 85,
+            IQ: 92,
+            Durability: 100,
+            Energy: 95,
+            Combat: 98
+        },
+        image: "https://via.placeholder.com/300x300/0b0e14/ffffff?text=Whitebeard",
+        specialAbility: "Gura Gura no Mi",
+        shortDescription: "The Strongest Man in the World."
     }
 ];
 
@@ -263,9 +348,9 @@ function setupEventListeners() {
         const charBGroup = document.getElementById("charB-group");
         const infoDisplay = document.getElementById("character-cards-container");
         const comparisonSection = document.getElementById("comparison-section");
-        
+
         charBGroup.style.display = state.compareMode ? "flex" : "none";
-        
+
         if (state.compareMode) {
             infoDisplay.classList.add("compare-mode");
             comparisonSection.classList.add("active");
