@@ -219,7 +219,7 @@ const characters = [
             Energy: 100,
             Combat: 95
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/00ff00?text=Hashirama",
+        image: "images/Hashirama_Senju.webp",
         specialAbility: "Wood Style: Deep Forest Emergence",
         shortDescription: "The First Hokage and God of Shinobi."
     },
