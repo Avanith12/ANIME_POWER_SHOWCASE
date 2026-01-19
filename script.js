@@ -253,7 +253,7 @@ const characters = [
             Energy: 85,
             Combat: 94
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ffff00?text=Sanji",
+        image: "images/sanji.webp",
         specialAbility: "Ifrit Jambe",
         shortDescription: "cook of the Straw Hat Pirates."
     },
@@ -270,7 +270,7 @@ const characters = [
             Energy: 100,
             Combat: 100
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ff0000?text=Roger",
+        image: "images/gol d roger.webp",
         specialAbility: "Divine Departure",
         shortDescription: "The Pirate King who conquered the Grand Line."
     },
@@ -287,7 +287,7 @@ const characters = [
             Energy: 95,
             Combat: 98
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/ffffff?text=Whitebeard",
+        image: "images/edward new gate.jpeg",
         specialAbility: "Gura Gura no Mi",
         shortDescription: "The Strongest Man in the World."
     }
