@@ -71,9 +71,34 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <b>Madara Uchiha</b>
     </td>
   </tr>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/Hashirama_Senju.webp" alt="Hashirama Senju" width="120"><br>
+      <b>Hashirama Senju</b>
+    </td>
+    <td align="center">
+      <img src="images/toji.webp" alt="Toji Fushiguro" width="120"><br>
+      <b>Toji Fushiguro</b>
+    </td>
+    <td align="center">
+      <img src="images/sanji.webp" alt="Sanji" width="120"><br>
+      <b>Sanji</b>
+    </td>
+    <td align="center">
+      <img src="images/gol d roger.webp" alt="Gol D. Roger" width="120"><br>
+      <b>Gol D. Roger</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="4">
+      <img src="images/edward new gate.jpeg" alt="Edward Newgate" width="120"><br>
+      <b>Edward Newgate</b>
+    </td>
+  </tr>
 </table>
 
-*All 13 legendary characters ready for power comparison!*
+*All 18 legendary characters ready for power comparison!*
 
 ---
 ##  Features
