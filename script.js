@@ -236,7 +236,7 @@ const characters = [
             Energy: 0,
             Combat: 100
         },
-        image: "https://via.placeholder.com/300x300/0b0e14/555555?text=Toji",
+        image: "images/toji.webp",
         specialAbility: "Heavenly Restriction",
         shortDescription: " The Sorcerer Killer with zero cursed energy."
     },
