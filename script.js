@@ -309,6 +309,23 @@ const characters = [
         shortDescription: "The Pirate King who conquered the Grand Line."
     },
     {
+        id: "mihawk",
+        name: "Dracule Mihawk",
+        anime: "One Piece",
+        role: "Neutral",
+        stats: {
+            Strength: 94,
+            Speed: 92,
+            IQ: 96,
+            Durability: 92,
+            Energy: 84,
+            Combat: 100
+        },
+        image: "images/mihawk.jpeg",
+        specialAbility: "World's Strongest Swordsman",
+        shortDescription: "The current holder of the title, World's Strongest Swordsman."
+    },
+    {
         id: "shanks",
         name: "Shanks",
         anime: "One Piece",

@@ -107,10 +107,14 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/kaido.jpg" alt="Kaido" width="120"><br>
       <b>Kaido</b>
     </td>
+    <td align="center">
+      <img src="images/mihawk.jpeg" alt="Mihawk" width="120"><br>
+      <b>Dracule Mihawk</b>
+    </td>
   </tr>
 </table>
 
-*All 21 legendary characters ready for power comparison!*
+*All 22 legendary characters ready for power comparison!*
 
 ---
 ##  Features
