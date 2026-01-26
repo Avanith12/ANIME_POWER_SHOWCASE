@@ -426,6 +426,16 @@ input[type="checkbox"]:checked+.toggle-switch::after {
     letter-spacing: 0.5px;
 }
 
+#table-head-A {
+    color: #00f2ff;
+    text-shadow: 0 0 5px rgba(0, 242, 255, 0.3);
+}
+
+#table-head-B {
+    color: #ff00c8;
+    text-shadow: 0 0 5px rgba(255, 0, 200, 0.3);
+}
+
 .comparison-table td {
     color: var(--text-primary);
     font-size: 0.95rem;

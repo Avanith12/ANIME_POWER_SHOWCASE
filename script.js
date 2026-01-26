@@ -636,7 +636,7 @@ function updateRadarChart() {
         .attr("filter", "drop-shadow(0 0 5px rgba(0, 242, 255, 0.5))");
 
     // Path B
-    let pathB = radarSvg.selectAll(".radarPathB").data([state.compareMode ? [dataB] : []]);
+    let pathB = radarSvg.selectAll(".radarPathB").data(state.compareMode ? [dataB] : []);
     pathB.exit().remove();
     pathB.enter()
         .append("path")
