@@ -88,6 +88,23 @@ const characters = [
         shortDescription: "The Shadow Monarch who defies death itself."
     },
     {
+        id: "kaido",
+        name: "Kaido",
+        anime: "One Piece",
+        role: "Villain",
+        stats: {
+            Strength: 95,
+            Speed: 88,
+            IQ: 80,
+            Durability: 99,
+            Energy: 91,
+            Combat: 90
+        },
+        image: "images/kaido.jpg",
+        specialAbility: "Uo Uo no Mi, Model: Seiryu",
+        shortDescription: "The King of the Beasts and World's Strongest Creature."
+    },
+    {
         id: "luffy",
         name: "Monkey D. Luffy",
         anime: "One Piece",

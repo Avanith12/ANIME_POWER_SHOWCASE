@@ -103,10 +103,14 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/sun_jin_woo.jpeg" alt="Sung Jin-Woo" width="120"><br>
       <b>Sung Jin-Woo</b>
     </td>
+    <td align="center">
+      <img src="images/kaido.jpg" alt="Kaido" width="120"><br>
+      <b>Kaido</b>
+    </td>
   </tr>
 </table>
 
-*All 20 legendary characters ready for power comparison!*
+*All 21 legendary characters ready for power comparison!*
 
 ---
 ##  Features
