@@ -34,12 +34,12 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/vegeta.png" alt="Vegeta" width="120"><br>
       <b>Vegeta</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="images/luffy.png" alt="Monkey D. Luffy" width="120"><br>
       <b>Monkey D. Luffy</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="images/zoro.png" alt="Roronoa Zoro" width="120"><br>
       <b>Roronoa Zoro</b>
@@ -52,8 +52,6 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/Levi Ackerman.jpeg" alt="Levi Ackerman" width="120"><br>
       <b>Levi Ackerman</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="images/Ryomen Sukuna.jpeg" alt="Ryomen Sukuna" width="120"><br>
       <b>Ryomen Sukuna</b>
@@ -62,6 +60,8 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/Saitama.png" alt="Saitama" width="120"><br>
       <b>Saitama</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="images/Ichigo Kurosaki.jpeg" alt="Ichigo Kurosaki" width="120"><br>
       <b>Ichigo Kurosaki</b>
@@ -70,9 +70,6 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/Madara Uchiha.jpeg" alt="Madara Uchiha" width="120"><br>
       <b>Madara Uchiha</b>
     </td>
-  </tr>
-  </tr>
-  <tr>
     <td align="center">
       <img src="images/Hashirama_Senju.webp" alt="Hashirama Senju" width="120"><br>
       <b>Hashirama Senju</b>
@@ -85,12 +82,12 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/sanji.webp" alt="Sanji" width="120"><br>
       <b>Sanji</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="images/gol d roger.webp" alt="Gol D. Roger" width="120"><br>
       <b>Gol D. Roger</b>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="images/edward new gate.jpeg" alt="Edward Newgate" width="120"><br>
       <b>Edward Newgate</b>
@@ -107,8 +104,10 @@ Explore the stats that define your favorite heroes and villains through dynamic 
       <img src="images/kaido.jpg" alt="Kaido" width="120"><br>
       <b>Kaido</b>
     </td>
+  </tr>
+  <tr>
     <td align="center">
-      <img src="images/mihawk.jpeg" alt="Mihawk" width="120"><br>
+      <img src="images/mihawk.jpeg" alt="Dracule Mihawk" width="120"><br>
       <b>Dracule Mihawk</b>
     </td>
   </tr>
