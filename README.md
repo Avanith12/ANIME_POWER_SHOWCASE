@@ -91,9 +91,17 @@ Explore the stats that define your favorite heroes and villains through dynamic 
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="4">
+    <td align="center">
       <img src="images/edward new gate.jpeg" alt="Edward Newgate" width="120"><br>
       <b>Edward Newgate</b>
+    </td>
+    <td align="center">
+      <img src="images/shanks.png" alt="Shanks" width="120"><br>
+      <b>Shanks</b>
+    </td>
+    <td align="center">
+      <img src="images/sun_jin_woo.jpeg" alt="Sung Jin-Woo" width="120"><br>
+      <b>Sung Jin-Woo</b>
     </td>
   </tr>
 </table>
