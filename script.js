@@ -8,12 +8,12 @@ const characters = [
         anime: "Naruto",
         role: "Hero",
         stats: {
-            Strength: 85,
-            Speed: 90,
-            IQ: 70,
-            Durability: 95,
+            Strength: 97,
+            Speed: 98,
+            IQ: 88,
+            Durability: 96,
             Energy: 100,
-            Combat: 88
+            Combat: 97
         },
         image: "images/naruto.png",
         specialAbility: "Six Paths Sage Mode",
@@ -25,10 +25,10 @@ const characters = [
         anime: "Naruto",
         role: "Anti-Hero",
         stats: {
-            Strength: 82,
-            Speed: 95,
-            IQ: 92,
-            Durability: 80,
+            Strength: 94,
+            Speed: 97,
+            IQ: 95,
+            Durability: 90,
             Energy: 95,
             Combat: 98
         },
@@ -43,11 +43,11 @@ const characters = [
         role: "Hero",
         stats: {
             Strength: 100,
-            Speed: 98,
-            IQ: 65,
-            Durability: 95,
+            Speed: 100,
+            IQ: 99,
+            Durability: 100,
             Energy: 100,
-            Combat: 95
+            Combat: 100
         },
         image: "images/goku.png",
         specialAbility: "Ultra Instinct",
@@ -59,12 +59,12 @@ const characters = [
         anime: "Dragon Ball",
         role: "Anti-Hero",
         stats: {
-            Strength: 98,
-            Speed: 95,
-            IQ: 85,
-            Durability: 92,
-            Energy: 98,
-            Combat: 96
+            Strength: 100,
+            Speed: 100,
+            IQ: 96,
+            Durability: 100,
+            Energy: 100,
+            Combat: 100
         },
         image: "images/vegeta.png",
         specialAbility: "Ultra Ego",
@@ -76,12 +76,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 90,
+            Strength: 92,
             Speed: 88,
-            IQ: 60,
-            Durability: 100,
-            Energy: 92,
-            Combat: 90
+            IQ: 75,
+            Durability: 95,
+            Energy: 90,
+            Combat: 94
         },
         image: "images/luffy.png",
         specialAbility: "Gear 5 (Sun God Nika)",
@@ -93,12 +93,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 88,
-            Speed: 82,
-            IQ: 75,
-            Durability: 95,
+            Strength: 90,
+            Speed: 87,
+            IQ: 82,
+            Durability: 90,
             Energy: 85,
-            Combat: 96
+            Combat: 95
         },
         image: "images/zoro.png",
         specialAbility: "Three Sword Style: King of Hell",
@@ -110,12 +110,12 @@ const characters = [
         anime: "Jujutsu Kaisen",
         role: "Hero",
         stats: {
-            Strength: 85,
-            Speed: 100,
-            IQ: 95,
-            Durability: 100,
-            Energy: 100,
-            Combat: 98
+            Strength: 80,
+            Speed: 90,
+            IQ: 98,
+            Durability: 85,
+            Energy: 95,
+            Combat: 90
         },
         image: "images/gojo.jpeg",
         specialAbility: "Limitless / Hollow Purple",
@@ -127,12 +127,12 @@ const characters = [
         anime: "Attack on Titan",
         role: "Hero",
         stats: {
-            Strength: 75,
-            Speed: 95,
-            IQ: 90,
-            Durability: 70,
-            Energy: 50,
-            Combat: 100
+            Strength: 60,
+            Speed: 70,
+            IQ: 85,
+            Durability: 50,
+            Energy: 30,
+            Combat: 90
         },
         image: "images/Levi Ackerman.jpeg",
         specialAbility: "Humanity's Strongest Soldier",
@@ -144,12 +144,12 @@ const characters = [
         anime: "Jujutsu Kaisen",
         role: "Villain",
         stats: {
-            Strength: 95,
-            Speed: 95,
-            IQ: 98,
-            Durability: 95,
-            Energy: 100,
-            Combat: 100
+            Strength: 85,
+            Speed: 92,
+            IQ: 95,
+            Durability: 88,
+            Energy: 99,
+            Combat: 90
         },
         image: "images/Ryomen Sukuna.jpeg",
         specialAbility: "Malevolent Shrine / Cleave",
@@ -163,10 +163,10 @@ const characters = [
         stats: {
             Strength: 100,
             Speed: 100,
-            IQ: 50,
+            IQ: 95,
             Durability: 100,
-            Energy: 100,
-            Combat: 80
+            Energy: 99,
+            Combat: 100
         },
         image: "images/Saitama.png",
         specialAbility: "Serious Punch",
@@ -178,12 +178,12 @@ const characters = [
         anime: "Bleach",
         role: "Hero",
         stats: {
-            Strength: 92,
-            Speed: 98,
-            IQ: 80,
-            Durability: 90,
+            Strength: 98,
+            Speed: 99,
+            IQ: 85,
+            Durability: 100,
             Energy: 100,
-            Combat: 95
+            Combat: 100
         },
         image: "images/Ichigo Kurosaki.jpeg",
         specialAbility: "True Bankai / Getsuga Tensho",
@@ -195,12 +195,12 @@ const characters = [
         anime: "Naruto",
         role: "Villain",
         stats: {
-            Strength: 94,
-            Speed: 92,
+            Strength: 96,
+            Speed: 95,
             IQ: 98,
-            Durability: 92,
-            Energy: 100,
-            Combat: 100
+            Durability: 95,
+            Energy: 98,
+            Combat: 99
         },
         image: "images/Madara Uchiha.jpeg",
         specialAbility: "Infinite Tsukuyomi",
@@ -215,7 +215,7 @@ const characters = [
             Strength: 95,
             Speed: 90,
             IQ: 92,
-            Durability: 98,
+            Durability: 95,
             Energy: 100,
             Combat: 95
         },
@@ -229,12 +229,12 @@ const characters = [
         anime: "Jujutsu Kaisen",
         role: "Villain",
         stats: {
-            Strength: 98,
-            Speed: 99,
-            IQ: 95,
-            Durability: 90,
+            Strength: 95,
+            Speed: 98,
+            IQ: 85,
+            Durability: 85,
             Energy: 0,
-            Combat: 100
+            Combat: 95
         },
         image: "images/toji.webp",
         specialAbility: "Heavenly Restriction",
@@ -246,12 +246,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 92,
-            Speed: 96,
-            IQ: 90,
-            Durability: 88,
-            Energy: 85,
-            Combat: 94
+            Strength: 88,
+            Speed: 90,
+            IQ: 92,
+            Durability: 85,
+            Energy: 80,
+            Combat: 92
         },
         image: "images/sanji.webp",
         specialAbility: "Ifrit Jambe",
@@ -263,12 +263,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 100,
-            Speed: 100,
-            IQ: 95,
-            Durability: 100,
-            Energy: 100,
-            Combat: 100
+            Strength: 90,
+            Speed: 88,
+            IQ: 90,
+            Durability: 90,
+            Energy: 85,
+            Combat: 98
         },
         image: "images/gol d roger.webp",
         specialAbility: "Divine Departure",
@@ -280,12 +280,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 100,
+            Strength: 95,
             Speed: 85,
-            IQ: 92,
-            Durability: 100,
-            Energy: 95,
-            Combat: 98
+            IQ: 90,
+            Durability: 95,
+            Energy: 90,
+            Combat: 95
         },
         image: "images/edward new gate.jpeg",
         specialAbility: "Gura Gura no Mi",
