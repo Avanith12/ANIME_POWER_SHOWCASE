@@ -110,12 +110,12 @@ const characters = [
         anime: "One Piece",
         role: "Hero",
         stats: {
-            Strength: 92,
-            Speed: 92,
-            IQ: 80,
+            Strength: 94,
+            Speed: 95,
+            IQ: 82,
             Durability: 96,
             Energy: 90,
-            Combat: 90
+            Combat: 92
         },
         image: "images/luffy.png",
         specialAbility: "Gear 5 (Sun God Nika)",
@@ -197,7 +197,7 @@ const characters = [
         stats: {
             Strength: 100,
             Speed: 100,
-            IQ: 88,
+            IQ: 91,
             Durability: 100,
             Energy: 100,
             Combat: 100
@@ -263,10 +263,10 @@ const characters = [
         anime: "Jujutsu Kaisen",
         role: "Villain",
         stats: {
-            Strength: 98,
-            Speed: 98,
-            IQ: 89,
-            Durability: 95,
+            Strength: 100,
+            Speed: 99,
+            IQ: 95,
+            Durability: 98,
             Energy: 0,
             Combat: 100
         },
