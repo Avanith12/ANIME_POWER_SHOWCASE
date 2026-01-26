@@ -275,6 +275,23 @@ const characters = [
         shortDescription: "The Pirate King who conquered the Grand Line."
     },
     {
+        id: "shanks",
+        name: "Shanks",
+        anime: "One Piece",
+        role: "Hero",
+        stats: {
+            Strength: 92,
+            Speed: 95,
+            IQ: 95,
+            Durability: 90,
+            Energy: 83,
+            Combat: 100
+        },
+        image: "images/shanks.png",
+        specialAbility: "Divine Departure / Haki",
+        shortDescription: "Chief of the Red Hair Pirates and Emperor of the Sea."
+    },
+    {
         id: "whitebeard",
         name: "Edward Newgate",
         anime: "One Piece",
