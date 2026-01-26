@@ -59,16 +59,33 @@ const characters = [
         anime: "Dragon Ball",
         role: "Anti-Hero",
         stats: {
-            Strength: 99,
-            Speed: 99,
-            IQ: 99,
-            Durability: 99,
-            Energy: 99,
-            Combat: 99
+            Strength: 100,
+            Speed: 100,
+            IQ: 96,
+            Durability: 100,
+            Energy: 100,
+            Combat: 100
         },
         image: "images/vegeta.png",
         specialAbility: "Ultra Ego",
         shortDescription: "The proud Prince of all Saiyans."
+    },
+    {
+        id: "jinwoo",
+        name: "Sung Jin-Woo",
+        anime: "Solo Leveling",
+        role: "Hero",
+        stats: {
+            Strength: 100,
+            Speed: 100,
+            IQ: 94,
+            Durability: 100,
+            Energy: 100,
+            Combat: 100
+        },
+        image: "images/sun_jin_woo.jpeg",
+        specialAbility: "Shadow Monarch",
+        shortDescription: "The Shadow Monarch who defies death itself."
     },
     {
         id: "luffy",
