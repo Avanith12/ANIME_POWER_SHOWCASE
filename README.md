@@ -106,7 +106,7 @@ Explore the stats that define your favorite heroes and villains through dynamic 
   </tr>
 </table>
 
-*All 18 legendary characters ready for power comparison!*
+*All 20 legendary characters ready for power comparison!*
 
 ---
 ##  Features
