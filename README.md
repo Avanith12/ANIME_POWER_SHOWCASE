@@ -191,9 +191,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-
-## best anime website is here
-
 ##  Credits & Disclaimer
 
 - **Charts**: Powered by [D3.js](https://d3js.org/).
