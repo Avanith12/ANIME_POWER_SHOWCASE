@@ -2,6 +2,9 @@
 
 **Live Demo:** [https://avanith12.github.io/ANIME_POWER_SHOWCASE/](https://avanith12.github.io/ANIME_POWER_SHOWCASE/)
 
+##adding more charts
+
+
 <div align="center">
   <img src="gifs/power-dragon-ball.gif" alt="Anime Power" width="400">
 </div>
