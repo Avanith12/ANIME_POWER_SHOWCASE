@@ -2,7 +2,7 @@
 
 **Live Demo:** [https://avanith12.github.io/ANIME_POWER_SHOWCASE/](https://avanith12.github.io/ANIME_POWER_SHOWCASE/)
 
-##adding more charts
+
 
 
 <div align="center">
