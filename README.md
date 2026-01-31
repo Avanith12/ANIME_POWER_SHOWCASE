@@ -193,6 +193,7 @@ Since this is a client-side application, you don't need to install any heavy dep
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+## more credits
 
 ##  Credits & Disclaimer
 
