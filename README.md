@@ -3,7 +3,7 @@
 **Live Demo:** [https://avanith12.github.io/ANIME_POWER_SHOWCASE/](https://avanith12.github.io/ANIME_POWER_SHOWCASE/)
 
 
-
+######more things coming soon 
 
 <div align="center">
   <img src="gifs/power-dragon-ball.gif" alt="Anime Power" width="400">
