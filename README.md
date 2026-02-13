@@ -1,7 +1,7 @@
 #  Anime Power Showcase
 
 **Live Demo:** [https://avanith12.github.io/ANIME_POWER_SHOWCASE/](https://avanith12.github.io/ANIME_POWER_SHOWCASE/)
-
+## adding more things 
 
 <div align="center">
   <img src="gifs/power-dragon-ball.gif" alt="Anime Power" width="400">
