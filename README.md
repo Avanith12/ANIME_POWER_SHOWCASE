@@ -137,6 +137,8 @@ Explore the stats that define your favorite heroes and villains through dynamic 
 
 ##  Project Structure
 
+adding more images here
+
 ```
 ANIME_POWER_SHOWCASE/
 │
